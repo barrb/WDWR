@@ -1,0 +1,20 @@
+
+reset;
+option solver cplex;
+model wdwr.mod;
+data wdwr.dat;
+for {i in 0 .. 20}
+{
+	let a[1] := 0 + i*1000;
+	for {j in 0 .. 20}
+	{
+		let a[2] := 0 + j*1000;
+		solve;
+		printf "%f %f %f\n", y[1], y[2], cost;
+		print a[1] > a1.txt;
+		print a[2] > a2.txt;
+		print y[1] > koszt.txt;
+		print y[2] > ryzyko.txt;
+	}
+}
+

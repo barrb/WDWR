@@ -1,0 +1,493 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{lastpage} % To read number of pages
+\usepackage[polish]{babel}
+\usepackage[OT4]{fontenc}
+\usepackage[cp1250]{inputenc}
+\usepackage{fancyhdr, blindtext}
+\usepackage{xkeyval}
+\usepackage{chngcntr}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{pst-barcode}
+\usepackage{multirow}
+\usepackage{subcaption}
+%----------------------------------------------------------------------------------------
+%	Fancy footer configuration - fancyhdr
+%----------------------------------------------------------------------------------------
+\fancypagestyle{plain}{
+\fancyhead[L]{\includegraphics[width=0.07\columnwidth]{elka}}
+\fancyhead[R]{}
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{}
+\fancyfoot[L]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+\fancyhead{}
+\fancyfoot[R]{\thepage\ / \protect\pageref{LastPage}}
+\fancyfoot[C]{}
+\fancyhead[L]{\hmwkTitle}
+\fancyhead[R]{\hmwkClass}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+%\definecolor{DargBlue}{rgb}{0.188,0.192,0.565} % This is the color used for comments
+%\renewcommand{\headrule}{\hbox to\headwidth{%
+%    \color{DargBlue}\leaders\hrule height \headrulewidth\hfill}}
+
+% Margins
+\topmargin=-0.8in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+\linespread{1.1} % Line spacing
+\bibliographystyle{plain}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+%definded pseudocode languge for your modification
+\lstdefinelanguage{PseudoCode}[]{}{
+  morekeywords={function,Function, program,  for, Array, For, While, If, if, Where, where, new, else, Else, Then, then, Find, find, Select, select, Stack, stack, struct, Struct, Do, do, end, End, set, Set, false, False, True, true}
+  morecomment=[l]{//},
+  morecomment=[l]{\%},
+  morecomment=[s]{/*}{*/},
+  % FIXME: listings does not see guillemots, so any regions with them wont work  
+  morecomment=[s]{«REM»}{«ENDREM»},
+  morecomment=[s]{«REM}{»},
+  morestring=[s]{'}{'},
+  morestring=[s]{"}{"},
+  escapechar={@},
+  % required for use with UTF-8
+}
+
+
+
+\newcommand{\lstlanguage}[1]
+{
+\lstloadlanguages{#1} % Load languge syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=#1, % Use Perl in this example
+		  captionpos=b,
+        frame=single, % Single frame around code
+		  breaklines=true, %Break lines
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % functions bold and blue
+        keywordstyle=[2]\color{Purple}, % function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        %
+        % Put standard functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5, % Line numbers go in steps of 5
+}
+}
+\makeatletter
+\define@key{script}{label}{\def\LabelName{#1}}
+\define@key{script}{caption}{\def\CaptionName{#1}}
+\define@key{script}{language}{\def\LanguageName{#1}}
+%\define@key{script}{file}{\def\{#1}}
+\setkeys{script}{label=none,caption=none,language=Java}
+% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+\makeatother
+\newcommand\hmwkScript[2][]{
+\begingroup
+\setkeys{script}{#1}
+\lstlanguage{\LanguageName }
+\lstinputlisting[caption=\CaptionName,label=\LabelName]{#2}
+\endgroup
+}
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Projekt} % Assignment title
+\newcommand{\hmwkDueDate}{2013.01.24} % Due date
+\newcommand{\hmwkClass}{WDWR} % Course/class
+\newcommand{\hmwkClassTime}{} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Prowadz¹cy projekt:\\
+ dr in¿. Bartosz Koz³owski\\
+Zespó³: 03} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{
+ Grzegorz Barczyñski\\
+  \texttt{grzesiek.net@gmail.com}
+  \and
+  Krzysztof Zieliñski\\
+  \texttt{krzysztofzielinski862@gmail.com}
+}
+ % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.3in}\small{\hmwkDueDate}\\
+\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+}
+
+\author{\hmwkAuthorName}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+\begin{titlepage} % creating a titlepage with fency footers and headers
+\thispagestyle{plain} %use this fency style
+\maketitle 
+\end{titlepage}
+\setcounter{page}{2}
+\pagestyle{fancy} % come back to standard styles
+
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+\section{Treœæ zadania}
+Rozwa¿amy nastepuj¹ce uproszczone zagadnienie optymalnego rozdzia³u zadañ produkcyjnych:
+
+\begin{itemize}
+	\item Do produkcji piêciu elementów (A, B, C, D i E) przedsiêbiorstwo musi wydzier¿awiæ trzy maszyny.
+	\item Ka¿dy podzespó³ mo¿e byæ produkowany na ka¿dej maszynie, maszyny ró¿ni¹ siê jednak wydajnoœci¹ przy produkcji poszczególnych elementów, co przedstawia tabela:
+\begin{center}
+	\begin{tabular}{c|c|c|c|c|c}
+		\hline
+		\multicolumn{6}{ p{7cm}}{\centering
+		Wydajnoœæ  maszyn (szt/godz.) przy produkcji podzespo³u
+		} \\
+		\hline
+		Maszyna & A & B & C & D & E \\ \hline
+		M1 & 0.85 & 1.30 & 0.65 & 1.50 & 0.40 \\ 
+		M2 & 0.65 & 0.80 & 0.55 & 1.50 & 0.70 \\ 
+		M3 & 1.20 & 0.95 & 0.35 & 1.70 & 0.40 \\ 
+		\hline
+	\end{tabular}
+\end{center}
+\item Ka¿d¹ z maszyn mozna wydzier¿awiæ na co najmniej 180 godz. ci¹gu miesi¹ca. Koszt 1 godz. pracy maszyn (z³) reprezentuje zmienna losowa:
+\begin{center}
+	\begin{tabular}{r|c|c|c}
+		\hline
+		Prawdop. & M1 & M2 & M3 \\ \hline
+		0.1 & 20 & 25 & 35 \\ 
+		0.6 & 40 & 30 & 45 \\ 
+		0.2 & 35 & 20 & 40 \\ 
+		0.1 & 45 & 50 & 25 \\ 
+		\hline
+	\end{tabular}
+\end{center}
+\item Nale¿y rozdzieliæ miesiêczn¹ produkcjê elementów pomiêdzy maszyny tak, aby wyprodukowaæ co najmniej po 60 sz. elementów A, B, C oraz co najmniej 120 szt. elementów D i E.
+\item Przy dzier¿awie dowolnej z maszyn na okres do 100 godz. koszt 1 godz. pracy maszyny maleje o 20\%.
+\end{itemize}
+
+\begin{enumerate}
+	\item Zaproponowaæ dwukryterialny model kosztu i ryzyka ze œredni¹ jako miar¹ kosztu i odchyleniem maksymalnym jako miar¹ ryzyka.
+	\item Wyznaczyæ obraz zbioru rozwi¹zañ efektywnych w przestrzeni ryzyko\textendash koszt
+	\item Wskazaæ rozwi¹zania efektywne minimalnego ryzyka i minimalnego kosztu. Jakie odpowiadaj¹ im wartoœci w przestrzeni ryzyko-koszt?
+	\item Wybraæ trzy dowolne rozwi¹zania efektywne minimalnego ryzyka i minimalnego kosztu. Jakie odpowiadaj¹ im wartoœci w przestrzeni ryzyko-koszt?
+	\item Wybraæ trzy dowolne rozwi¹zania efektywne. SprawdŸ czy zachodzi pomiêdzy nimi relacja dominacji stochastyczej pierwszego i drugiego rzêdu. Wyniki skomentowaæ odnieœæ do ogólnego przypadku.
+\end{enumerate}
+\section{Model}
+\paragraph{Indeksy}
+\begin{itemize}
+\item $e=1,2,\ldots, |E|$ - produkowane elementy
+\item $m=1,2,\ldots, |M|$ - maszyny
+\item $p=1,2,\ldots, |P|$ - prawdopodobieñstwa
+\item $c=1,2$ - kryteria
+\end{itemize}
+\paragraph{Sta³e}
+\begin{itemize}
+\item $wd_{me}$ - wydajnoœci maszyn 
+\item $pr_{p}$ - prawdopodobieñstwa kosztów u¿ycia maszyny przez godzinê
+\item $k_{pm}$ - koszt produkcji m-tego elementu przy prawdopodobieñstwie p
+\item $ek_{m}$ - koszt œredni m-tej maszyny 
+\begin{equation}
+ek[m] = \sum_p pr_{p}\cdot k_{pm}
+\label{eq:ek}
+\end{equation}
+\item $mp_{e}$ - minimalna produkcja e-tego elementu
+\item $mo$ - maksymalny czas na jaki mo¿na wyporzyczyæ dowoln¹ maszynê 
+\item $pk_{m}$ - pesymistyczny koszt 
+\begin{equation}
+pk_{m} = \max_p \{k_{pm}\}
+\label{eq:pk}
+\end{equation}
+\item $\varepsilon$ - ma³a liczba wykorzystywana w metodzie punktu odniesienia
+\item $\lambda$ - wspó³czynnik skalowania w metodzie punktu odniesienia 
+\item $\beta$ - wspó³czynnik skoku w metodzie punktu odniesienia
+\item $a_{c}$ - punkt aspiracji w metodzie punktu odniesienia
+\end{itemize}
+\paragraph{Zmienne}
+\begin{itemize}
+\item $o'_{me} \geq 0$ - czas pracy m-tej maszyny nad e-tym elementem
+\item $o''_{me} \geq 0$ - czas pracy m-tej maszyny nad e-tym elementem, u¿ywany przy przekroczeniu 100 godz.
+\item $u_{m} \in \{0,1\}$ - zmienna przyjmuje wartoœæ 1 gdy przekroczony zostanie czas 100 godzin na m-tej maszynie
+\item $y_{c} \geq 0$ - zmienne przechowuj¹ca koszt dla $c = 1$ oraz ryzyko dla $c = 2$
+\item $v$ - zmienna pomocnicza w metodzie punktu odniesienia
+\item $z_{c}$ - zmienna pomocnicza w metodzi punktu odniesienia
+\end{itemize}
+\paragraph{Warunki}
+\begin{itemize}
+\item \textbf{Ograniczenie okreœlaj¹ce minimaln¹ produkcje elementów}
+\begin{equation}
+\forall e: \sum_m (o'_{me} + o''_{me})\cdot wd_{me} \geq mp_{e} 
+\label{eq:oompe}
+\end{equation}
+\item \textbf{Ograniczenie maksymalny czas u¿ycia maszyny}
+\begin{equation} 
+\forall m: \sum_e o'_{me} + o''_{me} \leq mo
+\label{eq:omcum}
+\end{equation}
+\item \textbf{Ograniczenie definiuj¹ce zmienn¹ binarn¹ $u_{m}$} 
+\begin{equation} 
+\forall m: \sum_e o''_{me} \leq mo \cdot u_{m} 
+\label{eq:odzb}
+\end{equation}
+\item \textbf{Ograniczenie obci¹¿enia $o'_{me}$ do 100 godzin}
+\begin{equation}
+\forall m: \sum_e o'_{me} \leq 100
+\label{eq:oog}
+\end{equation}
+\item \textbf{Definicja kosztu}
+\begin{equation}
+y_{1} = \sum_m \sum_e (0.8\cdot o'_{me}\cdot ek_{m} + o''_{me}\cdot ek_{m}) + \sum_m 20\cdot ek_{m}\cdot u_{m}
+\label{eq:dk}
+\end{equation}
+\item \textbf{Definicja ryzyka}
+\begin{equation}
+y_{2} = \sum_m \sum_e (0.8\cdot o'_{me}\cdot pk_{m} + o''_{me}\cdot pk_{m}) + \sum_m 20\cdot pk_{m}\cdot u_{m} - y_{1}
+\label{eq:dr}
+\end{equation}
+\item \textbf{Definicja zmiennej $v$}
+\begin{equation}
+\forall c: v \leq z_{c}
+\label{eq:dzv}
+\end{equation}
+\item \textbf{Definicje zmiennej $z_{c}$}
+\begin{equation}
+\forall c: \lambda\cdot\beta\cdot(-y_{c} + a_{c})  \geq z_{c}
+\label{eq:dzz1}
+\end{equation}
+\begin{equation}
+\forall c: \lambda\cdot(-y_{c} + a_{c})  \geq z_{c}
+\label{eq:dzz2}
+\end{equation}
+\end{itemize}
+\paragraph{Funkcja celu} 
+\begin{equation}
+ \max v +\varepsilon\cdot\sum_c (-y_{c})
+\label{eq:fc}
+\end{equation}
+\textbf{Komentarz do modelu}\\
+Zgodnie z wymaganiami zadania zosta³ przygotowany dwukryterialny model kosztu (\ref{eq:dk}) i ryzyka (\ref{eq:dr}) ze œredni¹ jako miar¹ kosztu i odchyleniem maksymalnym jako miar¹ ryzyka. W pierwszej kolejnoœci zosta³y wyliczone sta³e na podstawie danych z treœci zadania $ek_{m}$ (\ref{eq:ek}) oraz $pk_{m}$ (\ref{eq:pk}). Pierwsze dwa ograniczenia (\ref{eq:oompe}, \ref{eq:omcum}) okreœlaj¹ podstawowe wymagania zadania, na minimaln¹ iloœæ elementów oraz maksymalny czas pracy maszyny.  Zastosowanie zni¿ki 20\%, gdy czas pracy maszyny nie przekracza 100h zosta³o rozwi¹zane przy pomocy rozbicia czasu pracy na $o'_{me}$ (czas pracy do 100h) oraz $o''_{me}$ (czas pracy powy¿ej 100h). Zmienna binarna $u_{m}$ (warunek \ref{eq:odzb}) wykorzystywana jest, gdy trzeba dodaæ 20 jednostek kosztu, po przekroczoniu 100h limitu czasu pracy maszyny. Ostatnie trzy warunki (\ref{eq:dzv},  \ref{eq:dzz1},  \ref{eq:dzz2}) wykorzytywane s¹ przy metodzie punktu odniesienia. Sta³a $a_{c}$ zawiera punkt aspiracji i jest zmieniana w skrypcie przygotowanym do projektu w celu wyznaczenia zbioru rozwi¹zañ efektywnych przetrzeni ryzyko\textendash koszt. W zale¿noœci od punktu startowego uzyskiwane s¹ ró¿ne rozwi¹zania niezdominowane. Metoda punktu odniesienia wykorzytuje maksymilizacje po wszystkich ocenach. Zosta³o zastosowane odwrócenie znaku $y_{c}$ w ograniczeniach na definicje zmiennej $z_{c}$ (warunki \ref{eq:dzz1}, \ref{eq:dzz2}). W ten sposob mniejsze wartoœci $y_{c}$, bêd¹ wiêksze dla dla $-y_{c}$. Wszystkie oceny s¹ przeskalowane za pomoc¹ mno¿nika $\lambda$ (przyjêto  $\lambda = 1$) dla znormalizowania ich zakresów zmiennoœci. Dalej, wartoœci wyra¿aj¹ce znormalizowane nadmiary wartoœci ocen podnad poziom aspiracji s¹ pomniejszane przez czynnik $\beta$, rzêdu $10^{-3}$. W konsekwencji przyrost wartoœci oceny ponad poziomem apsiracji powoduje znacznie mniejszy przyrost wartoœci funkcji osi¹gniêcia ni¿ w przypadku nieosi¹gania poziomu aspiracji.
+
+\section{Zbiór rozwi¹zañ efektywnych w przestrzeni ryzyko\textendash koszt}
+Rysunek \ref{fig:w1} oraz \ref{fig:w2} przestawiajaj¹ zbiór rozwi¹zañ efektywnych w przetrzeni ryzyko koszt. Zosta³ wyznaczony przy pomocy skryptu w programie AMPL.
+
+\begin{center}
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{w1.png}
+	\caption{Obraz zbioru rozwi¹zañ efektywnych w przestrzeni ryzyko\textendash koszt, w z³/z³}
+	\label{fig:w1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+		\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{w2.png}
+	\caption{Obraz zbioru rozwi¹zan efektywnych w przetrzeni ryzyko\textendash koszt, w z³/z³}
+	\label{fig:w2}
+\end{figure}
+\end{center}
+
+\section{Rozwi¹zania efektywne minimalnego kosztu i minimalnego ryzyka}
+Rozwi¹zania efektywne minimalnego kosztu i minimalnego ryzyka odpowiadaj¹ skrajnym/krañcowym rozwi¹zaniom w przetrzeni ryzyko\textendash koszt (Rysunek \ref{fig:w1} oraz \ref{fig:w2}).\\
+\textbf{Minimalny koszt}\\
+dla funkcji celu $min  (y_{1})$ \\
+$kosztu = 14295.90$\\
+$ryzyko = 5199.18$ \\
+\begin{table}[H]
+    \begin{subtable}{.5\linewidth}
+      \centering
+        \begin{tabular}{c|c|c|c|c|c}
+		\hline
+		Maszyna & A & B & C & D & E \\ \hline
+		M1 & 0 & 7.69 & 92.31 & 0 & 0 \\ 
+		M2 & 0 & 0 & 0 & 8.57 & 91.43 \\ 
+		M3 & 50 & 0 & 0 & 50 & 0 \\ 
+		\hline
+	\end{tabular}
+	\caption{$o'_{me}$}
+    \end{subtable}%
+    \begin{subtable}{.5\linewidth}
+      \centering
+     \begin{tabular}{c|c|c|c|c|c}
+		\hline
+		Maszyna & A & B & C & D & E \\ \hline
+		M1 & 0 & 46.15 & 0 & 7.07 & 0 \\ 
+		M2 & 0 & 0 & 0 & 0 & 80 \\ 
+		M3 & 0 & 0 & 0 & 0 & 0 \\ 
+		\hline
+	\end{tabular}
+	\caption{$o''_{me}$}
+    \end{subtable} 
+		\caption{Czas pracy m-tej maszyny nad e-tym elementem przy minimalizacji kosztu, w godz.}
+\end{table}
+
+
+\textbf{Minimalne ryzyko}\\
+dla funkcji celu $min  (y_{2})$ \\
+$koszt = 17395.40$ \\
+$ryzyko = 4491.73$ \\
+
+
+\begin{table}[H]
+    \begin{subtable}{.5\linewidth}
+      \centering
+	\begin{tabular}{c|c|c|c|c|c}
+		\hline
+		Maszyna & A & B & C & D & E \\ \hline
+		M1 & 0 & 0 & 58.46 & 0 & 41.54 \\ 
+		M2 & 0 & 0 & 0 & 0 & 100 \\ 
+		M3 & 50 & 0 & 0 & 0 & 50 \\ 
+		\hline
+	\end{tabular}
+	\caption{$o'_{me}$}
+    \end{subtable}%
+    \begin{subtable}{.5\linewidth}
+      \centering
+
+	\begin{tabular}{c|c|c|c|c|c}
+		\hline
+		Maszyna & A & B & C & D & E \\ \hline
+		M1 & 0 & 46.15 & 33.85 & 0 & 0 \\ 
+		M2 & 0 & 0 & 0 & 0 & 13.74 \\ 
+		M3 & 0 & 0 & 0 & 70.59 &  9.41 \\ 
+		\hline
+	\end{tabular}
+	\caption{$o''_{me}$}
+    \end{subtable} 
+		\caption{Wynik pracy m-tej maszyny nad e-tym elementem przy minimalizacji ryzyka, w godz.}
+\end{table}
+
+\textbf{Podsumowanie}\\
+\begin{table}[H]
+\centering
+	\begin{tabular}{c|c|c}
+		\hline
+		Maszyna & Minimalizacja kosztu & Minimalizacja ryzyka \\ \hline
+		M1 & 153.22 & 180 \\ 
+		M2 & 180 & 113.74  \\ 
+		M3 & 100 & 180  \\ 
+		\hline
+	\end{tabular}
+		\caption{Czas pracy maszyn $\forall m: t_{m} = \sum_e o'_{me} + o''_{me}$, w godz.}
+	\label{tab:czwmrk}
+	\end{table}
+
+\section{Trzy rozwi¹zania efektywne minimalnego kosztu i minimalnego ryzyka}
+Tabela \ref{tab:tdre} przedstawia wybrane wyniki minimalnego ryzyka i minimalnego kosztu. Pierwsze dwa wyniki osi¹gaj¹ lepsze ryzyko, pogarszaj¹c jednoczeœnie koszt (w porównaniu do optymalnego). Trzeci wynik jest identyczny, jak przy optymalnym koszcie, niewielka liczba wynikowych rozwi¹zañ efektywnych, powoduje, ¿e trzeba wybraæ jedno rozwi¹zanie krañcowe bêd¹ce lepszym kryterium. W tym przypadku zosta³ wybrany koszt. 
+
+\begin{table}[H]
+\centering
+	\begin{tabular}{c|c|c|c|c}
+		\hline
+		Nr & $a_{1}$ & $a_{2}$ & Koszt & Ryzyko\\ \hline
+		1 & 14000 & 4000 & 14977.40 & 4977.40 \\ 
+		2 & 17000 & 6000 & 15232.85 & 4844.86 \\ 
+		3 & 1000 & 2000 & 14295.88 & 5199.18 \\ 
+		\hline
+	\end{tabular}
+		\caption{Trzy rozwi¹zania efektywne minimalnego kosztu i minimalnego ryzyka}
+	\label{tab:tdre}
+	\end{table}
+	
+\textbf{Podsumowanie}\\
+\begin{table}[H]
+\centering
+	\begin{tabular}{c|c|c|c}
+		\hline
+		Maszyna/Nr & 1 & 2 & 3\\ \hline
+		M1 & 100 & 100 & 153.22\\ 
+		M2 & 176.90 & 167.55  & 180\\ 
+		M3 & 166.89 & 180  & 100\\ 
+		\hline
+	\end{tabular}
+		\caption{Czas pracy maszyn $\forall m: t_{m} = \sum_e o'_{me} + o''_{me}$, w godz.}
+	\label{tab:ptrn}
+	\end{table}
+	
+\section{Relacje dominancji I i II rzêdu}
+\begin{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{koszt.pdf}
+\caption{Obraz dystrybuanty koszty dla trzech wybranych wczeœniej przypadków}
+\label{fig:d1}
+\end{figure}
+\end{center}
+\textbf{Komentarz do dystrybuanty kosztu}\\
+Zgodnie z przyjêtym modelem (w którym maszyny przyjmuj¹ koszty wedle danego rozk³adu niezale¿nie), otrzymuje siê 64 mo¿liwoœci rozk³adu kosztów (ka¿dy z ka¿dym, po 4 mo¿liwoœci). Mo¿liwoœci techniczne uniemo¿liwi³y niestety poprowadzenie prawdziwych wykresów dystrybuant (przedstawione na rysunkach funkcje nie s¹ schodkowe). Jednak z pewn¹ granic¹ tolerancji mo¿na zauwa¿yæ parê zale¿noœci. Dystrybuanta kosztu wybranych przypadków (Rysunek \ref{fig:d1}) ukazuje dominowanie wartoœci kosztów przypadku nr 3 (skrajny przypadek o minimalnym koszcie œrednim). Wykresy dystrybuant Przypadków nr 1 i 2 zawieraj¹ siê w ca³oœci pod wykresem przypadku nr 3. Jednoczeœnie, wykresy nr 1 i 2 przecinaj¹ siê, a wiêc miêdzy tymi przypadkami nie ma relacji dominacji stochastycznej pierwszego rzêdu. A wiêc ostatecznie jedynie Przypadek 3 dominuje nad przypadkami 1 i 2 na podstawie relacji stochastycznej pierwszego stopnia dla miary kosztu.\\
+$Przypadek3 \succ_{FSD} Przypadek1$\\
+$Przypadek3 \succ_{FSD} Przypadek2$
+
+\begin{center}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{ryzyko.pdf}
+\caption{Obraz dystrybuanty ryzyka dla trzech wybranych wczeœniej przypadków}
+\label{fig:d2}
+\end{figure}
+\end{center}
+\textbf{Komentarz do dystrybuanty ryzyka}\\
+Analogicznie do dystrybuanty kosztu, dystrybuanta ryzyka (Rysunek \ref{fig:d2}) zosta³a poprowadzona dla ka¿dego przypadku odejmuj¹c od ryzyka uzyskany w danym przypadku koszt. W obrêbie przypadku wartoœæ ryzyka by³a sta³a, gdy¿ by³ to przypadek pesymistyczny - wartoœæ maksymalna kosztu. Z wykresu dystrybuant nie mo¿na zauwa¿yæ ¿adnych relacji dominacji. Wszystkie przypadki s¹ niezdominowane, dla ka¿dego z nich mog¹ istnieæ decydencji, którzy go wybior¹.
+
+
+\section{Za³¹czniki do projektu}
+
+\begin{itemize}
+	\item model wdwr.mod i plik danych wdwr.dat
+	\item skrypt do generacji rozwi¹zan efektywnych script.run
+	\item wyniki.xls - dane wygenerowane przez skrypt script.run
+	\item dystrybuanty.xls - obliczenia dystrybuant
+\end{itemize}
+
+\end{document}
+
