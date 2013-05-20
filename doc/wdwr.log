@@ -1,0 +1,461 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.11.11)  20 MAY 2013 19:44
+entering extended mode
+**wdwr.tex
+("E:\Dane z dysku C\PW10\WDWR\repo\doc\wdwr.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
+, bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
+ian, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, icelandic, indonesian, interlingua, irish, italian,
+ kannada, kurmanji, lao, latin, latvian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, ng
+erman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, romanian, russian, sanskrit, serbian, slovak, s
+lovenian, spanish, swedish, swissgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usenglishm
+ax, welsh, loaded.
+(E:\Programy\MiTeX\tex\latex\base\article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(E:\Programy\MiTeX\tex\latex\base\size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (E:\Programy\MiTeX\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+(E:\Programy\MiTeX\tex\latex\fancyhdr\extramarks.sty
+\@temptokenb=\toks14
+) (E:\Programy\MiTeX\tex\latex\graphics\color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(E:\Programy\MiTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+ (E:\Programy\MiTeX\tex\latex\pdftex-def\pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(E:\Programy\MiTeX\tex\generic\oberdiek\infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+) (E:\Programy\MiTeX\tex\generic\oberdiek\ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+)
+(E:\Programy\MiTeX\tex\latex\graphics\dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)) (E:\Programy\MiTeX\tex\latex\graphics\graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(E:\Programy\MiTeX\tex\latex\graphics\keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks15
+) (E:\Programy\MiTeX\tex\latex\graphics\graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(E:\Programy\MiTeX\tex\latex\graphics\trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+) (E:\Programy\MiTeX\tex\latex\00miktex\graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(E:\Programy\MiTeX\tex\latex\listings\listings.sty
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks16
+\lst@length=\count89
+\lst@currlwidth=\dimen105
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen106
+\lst@width=\dimen107
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen108
+ (E:\Programy\MiTeX\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+(E:\Programy\MiTeX\tex\latex\listings\listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+ (E:\Programy\MiTeX\tex\latex\lipsum\lipsum.sty
+Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count96
+)
+(E:\Programy\MiTeX\tex\latex\lastpage\lastpage.sty
+Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
+) (E:\Programy\MiTeX\tex\generic\babel\babel.sty
+Package: babel 2008/07/08 v3.8m The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(E:\Programy\MiTeX\tex\latex\00miktex\bblopts.cfg
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+) (E:\Programy\MiTeX\tex\generic\babel\polish.ldf
+Language: polish 2005/03/31 v1.2l Polish support from the babel system
+
+(E:\Programy\MiTeX\tex\generic\babel\babel.def
+File: babel.def 2008/07/08 v3.8m Babel common definitions
+\babel@savecnt=\count97
+\U@D=\dimen109
+)
+Package babel Info: Making " an active character on input line 83.
+\pl@left=\dimen110
+\pl@down=\dimen111
+\pl@right=\dimen112
+\pl@temp=\dimen113
+)) (E:\Programy\MiTeX\tex\latex\base\fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(E:\Programy\MiTeX\tex\latex\base\ot4enc.def
+File: ot4enc.def 2005/09/27 v1.99g Standard LaTeX file
+)
+LaTeX Font Info:    Try loading font information for OT4+cmr on input line 100.
+ (E:\Programy\MiTeX\tex\latex\polski\ot4cmr.fd
+File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+))
+(E:\Programy\MiTeX\tex\latex\base\inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+ (E:\Programy\MiTeX\tex\latex\base\cp1250.def
+File: cp1250.def 2008/03/30 v1.1d Input encoding file
+))
+(E:\Programy\MiTeX\tex\latex\blindtext\blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+ (E:\Programy\MiTeX\tex\latex\tools\xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+\c@blindtext=\count98
+\c@Blindtext=\count99
+\c@blind@countparstart=\count100
+\blind@countxx=\count101
+\blindtext@numBlindtext=\count102
+\blind@countyy=\count103
+\c@blindlist=\count104
+\c@blindlistlevel=\count105
+\c@blindlist@level=\count106
+\blind@listitem=\count107
+\c@blind@listcount=\count108
+\c@blind@levelcount=\count109
+\blind@mathformula=\count110
+\blind@Mathformula=\count111
+\c@blind@randomcount=\count112
+\c@blind@randommax=\count113
+\c@blind@pangramcount=\count114
+\c@blind@pangrammax=\count115
+)
+(E:\Programy\MiTeX\tex\latex\xkeyval\xkeyval.sty
+Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
+ (E:\Programy\MiTeX\tex\generic\xkeyval\xkeyval.tex
+\XKV@toks=\toks19
+\XKV@tempa@toks=\toks20
+\XKV@depth=\count116
+File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
+))
+(E:\Programy\MiTeX\tex\latex\chngcntr\chngcntr.sty
+Package: chngcntr 2009/09/02 v1.0a change counter resetting
+) (E:\Programy\MiTeX\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count117
+\float@exts=\toks21
+\float@box=\box28
+\@float@everytoks=\toks22
+\@floatcapt=\box29
+)
+(E:\Programy\MiTeX\tex\latex\cite\cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 373.
+Package: cite 2010/09/10  v 5.3
+) (E:\Programy\MiTeX\tex\latex\pst-barcode\pst-barcode.sty
+(E:\Programy\MiTeX\tex\latex\pstricks\pstricks.sty
+Package: pstricks 2011/10/31 v0.52 LaTeX wrapper for `PSTricks' (RN,HV)
+ (E:\Programy\MiTeX\tex\generic\pstricks\base\pstricks.tex
+(E:\Programy\MiTeX\tex\generic\xkeyval\pst-xkey.tex
+File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
+) (E:\Programy\MiTeX\tex\generic\pstricks\base\pst-fp.tex
+`pst-fp' v0.05, 2010/01/17 (hv)
+\pstFP@xs=\count118
+\pstFP@xia=\count119
+\pstFP@xib=\count120
+\pstFP@xfa=\count121
+\pstFP@xfb=\count122
+\pstFP@rega=\count123
+\pstFP@regb=\count124
+\pstFP@regs=\count125
+\pstFP@times=\count126
+)
+\psLoopIndex=\count127
+
+`PSTricks' v2.27  <2012/03/11> (tvz)
+\pst@dima=\dimen114
+\pst@dimb=\dimen115
+\pst@dimc=\dimen116
+\pst@dimd=\dimen117
+\pst@dimg=\dimen118
+\pst@dimh=\dimen119
+\pst@dimm=\dimen120
+\pst@dimn=\dimen121
+\pst@dimo=\dimen122
+\pst@dimp=\dimen123
+\pst@hbox=\box30
+\pst@ibox=\box31
+\pst@boxg=\box32
+\pst@cnta=\count128
+\pst@cntb=\count129
+\pst@cntc=\count130
+\pst@cntd=\count131
+\pst@cntg=\count132
+\pst@cnth=\count133
+\pst@cntm=\count134
+\pst@cntn=\count135
+\pst@cnto=\count136
+\pst@cntp=\count137
+\@zero=\count138
+\pst@toks=\toks23
+(E:\Programy\MiTeX\tex\generic\pstricks\base\pstricks.con)
+\psunit=\dimen124
+\psxunit=\dimen125
+\psyunit=\dimen126
+\pst@C@@rType=\count139
+\pslinewidth=\dimen127
+\psk@startLW=\dimen128
+\psk@endLW=\dimen129
+\pst@customdefs=\toks24
+\pslinearc=\dimen130
+\pst@symbolStep=\dimen131
+\pst@symbolWidth=\dimen132
+\pst@symbolLinewidth=\dimen133
+\everypsbox=\toks25
+\psframesep=\dimen134
+\pslabelsep=\dimen135
+\pst@shift=\dimen136
+\theoverlaybox=\box33
+)
+File: pstricks.tex 2012/03/11 v2.27 `PSTricks' (tvz,hv)
+ (E:\Programy\MiTeX\tex\generic\pstricks\base\pst-fp.tex)
+File: pst-fp.tex 2012/03/11 v2.27 `PST-fp' (hv)
+
+(E:\Programy\MiTeX\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+ (E:\Programy\MiTeX\tex\latex\00miktex\color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 702.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+Package: pst-barcode 2012/11/16 package wrapper for pst-barcode.tex (hv)
+
+(E:\Programy\MiTeX\tex\generic\pst-barcode\pst-barcode.tex `PST-barcode' v0.10, 2012/11/16 (tb,hv))
+File: pst-barcode.tex 2012/11/16 v0.10 `PST-barcode' (hv)
+)
+(E:\Programy\MiTeX\tex\latex\multirow\multirow.sty
+\bigstrutjot=\dimen137
+) (E:\Programy\MiTeX\tex\latex\caption\subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(E:\Programy\MiTeX\tex\latex\caption\caption.sty
+Package: caption 2013/02/03 v3.3-65 Customizing captions (AR)
+ (E:\Programy\MiTeX\tex\latex\caption\caption3.sty
+Package: caption3 2013/02/03 v1.5-62 caption3 kernel (AR)
+\captionmargin=\dimen138
+\captionmargin@=\dimen139
+\captionwidth=\dimen140
+\caption@tempdima=\dimen141
+\caption@indent=\dimen142
+\caption@parindent=\dimen143
+\caption@hangindent=\dimen144
+)
+\c@ContinuedFloat=\count140
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+)
+\c@subfigure=\count141
+\c@subtable=\count142
+)
+("E:\Dane z dysku C\PW10\WDWR\repo\doc\wdwr.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 169.
+LaTeX Font Info:    ... okay on input line 169.
+ (E:\Programy\MiTeX\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count143
+\scratchdimen=\dimen145
+\scratchbox=\box34
+\nofMPsegments=\count144
+\nofMParguments=\count145
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count146
+\MPscratchDim=\dimen146
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
+\everyMPtoPDFconversion=\toks27
+)
+\c@lstlisting=\count149
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 169.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 172.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 172.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 172.
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 172.
+ (E:\Programy\MiTeX\tex\latex\polski\ot4cmtt.fd
+File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
+) <elka.png, id=1, 190.46156pt x 182.18062pt>
+File: elka.png Graphic file (type png)
+ <use elka.png>
+Package pdftex.def Info: elka.png used on input line 173.
+(pdftex.def)             Requested size: 32.88628pt x 31.45398pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 35.05402pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+Non-PDF special ignored!
+
+
+Non-PDF special ignored!
+Non-PDF special ignored!{C:/Users/GBaRr/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Dane z dysku C/PW10/WDWR/
+repo/doc/elka.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 188.
+ (E:\Programy\MiTeX\tex\latex\base\omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 188.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 191.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 191.
+ [2] [3] <w1.png, id=27, 491.58656pt x 283.0575pt>
+File: w1.png Graphic file (type png)
+
+<use w1.png>
+Package pdftex.def Info: w1.png used on input line 327.
+(pdftex.def)             Requested size: 469.77245pt x 270.49683pt.
+ <w2.png, id=28, 491.58656pt x 283.0575pt>
+File: w2.png Graphic file (type png)
+ <use w2.png>
+Package pdftex.def Info: w2.png used on input line 334.
+(pdftex.def)             Requested size: 469.77245pt x 270.49683pt.
+ [4]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 357.
+
+Underfull \hbox (badness 10000) in paragraph at lines 341--372
+
+ []
+
+[5 <E:/Dane z dysku C/PW10/WDWR/repo/doc/w1.png> <E:/Dane z dysku C/PW10/WDWR/repo/doc/w2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 375--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 410--423
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 442--455
+
+ []
+
+<koszt.pdf, id=42, 845.07718pt x 597.55246pt>
+File: koszt.pdf Graphic file (type pdf)
+ <use koszt.pdf>
+Package pdftex.def Info: koszt.pdf used on input line 461.
+(pdftex.def)             Requested size: 469.75839pt x 332.16525pt.
+ [7] <ryzyko.pdf, id=47, 845.07718pt x 597.55246pt>
+File: ryzyko.pdf Graphic file (type pdf)
+
+<use ryzyko.pdf>
+Package pdftex.def Info: ryzyko.pdf used on input line 474.
+(pdftex.def)             Requested size: 469.75839pt x 332.16525pt.
+ [8 <E:/Dane z dysku C/PW10/WDWR/repo/doc/koszt.pdf>] 
+AED: lastpage setting LastPage
+[9 <E:/Dane z dysku C/PW10/WDWR/repo/doc/ryzyko.pdf>] ("E:\Dane z dysku C\PW10\WDWR\repo\doc\wdwr.aux") ) 
+Here is how much of TeX's memory you used:
+ 7325 strings out of 494045
+ 102319 string characters out of 3152416
+ 295690 words of memory out of 3000000
+ 10503 multiletter control sequences out of 15000+200000
+ 12115 words of font info for 36 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 59i,15n,94p,1978b,559s stack positions out of 5000i,500n,10000p,200000b,50000s
+{E:/Programy/Mi
+TeX/fonts/enc/dvips/pl/plrm.enc}{E:/Programy/MiTeX/fonts/enc/dvips/pl/pltt.enc}{E:/Programy/MiTeX/fonts/enc/dvips/pl/pli
+t.enc}<E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cm
+mi7.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/Programy/MiTeX/fonts/type1/public/amsfonts/cm/cm
+sy7.pfb><E:/Programy/MiTeX/fonts/type1/public/pl/plbx10.pfb><E:/Programy/MiTeX/fonts/type1/public/pl/plbx12.pfb><E:/Prog
+ramy/MiTeX/fonts/type1/public/pl/plr10.pfb><E:/Programy/MiTeX/fonts/type1/public/pl/plr12.pfb><E:/Programy/MiTeX/fonts/t
+ype1/public/pl/plr9.pfb><E:/Programy/MiTeX/fonts/type1/public/pl/plti12.pfb><E:/Programy/MiTeX/fonts/type1/public/pl/plt
+t12.pfb>
+Output written on wdwr.pdf (9 pages, 714026 bytes).
+PDF statistics:
+ 146 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+
